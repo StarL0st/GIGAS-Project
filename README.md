@@ -81,9 +81,9 @@ The page opens up with a welcome screen: the name over the Earth's horizon, slow
 
 The screen has three sections:
 
-- **Left panel**: Where the features country search, filters by type of change, live events ("Happening now"), my places, coordinates (Technical mode) and the list of radar areas can be found.
-- **The globe**: a singular map that consists of a globe when zoomed out and converts into flat map when zoomed in where dots representing the information can be found.
-- **Right panel**: the areas opened by the user, stacked as tabs. In Simple mode it becomes "Your guide".
+- **Left panel**: where the features such as: country search, filters by type of change, live events ("Happening now"), my places, coordinates (Technical mode) and the list of radar areas can be found.
+- **The globe**: a singular map that consists of a globe that can be when zoomed out and can convert into flat map when zoomed in, where dots representing the information can be found.
+- **Right panel**: the areas opened by the user, stacked as tabs. In *"Simple Mode"* it becomes "Your guide".
 
 On a mobile device the globe sits on top and the panels below it, under two tabs (**Explore** and **Open areas**). The panel grows as you scroll and the globe shrinks to a strip.
 
@@ -101,14 +101,14 @@ On a mobile device the globe sits on top and the panels below it, under two tabs
 
 ### The globe
 
-- **Globe and close-up views.** The close-up view is a low, tilted camera with the horizon in sight. Switching views keeps your zoom.
+- **Globe and close-up views**: the close-up view is a low, tilted camera with the horizon in sight. Switching views keeps your zoom.
 
 <p align="center">
   <img src="images/globe-views.png" alt="The Globe view and Close-up view buttons, highlighted at the top left of the globe" width="800">
 </p>
 <p align="center">The Globe view and Close-up view buttons.</p>
 
-- **Auto-rotate**, a **view wheel** (Zoom, Orbit, Look, Up/Down, Center, Home; works with mouse, touch and arrow keys) and a **home** button, as square buttons beside the zoom buttons.
+- **Auto-rotate**: a *view wheel* (Zoom, Orbit, Look, Up/Down, Center, Home; works with mouse, touch and arrow keys) and a *home* button, as square buttons beside the zoom buttons.
 
 <p align="center">
   <img src="images/globe-controls.png" alt="The buttons at the top right of the globe, highlighted: home, zoom in, zoom out, compass, auto-rotate and the view wheel" width="800">
@@ -120,7 +120,7 @@ On a mobile device the globe sits on top and the panels below it, under two tabs
 </p>
 <p align="center">The view wheel.</p>
 
-- **Three looks** for the Earth: High Quality (cloud-free Sentinel-2 mosaic, sharp down to city blocks, based on the Copernicus Data), Hologram (dark outline map) and Street map.
+- **Three perspectives for the Earth**: "High Quality" (cloud-free Sentinel-2 mosaic, sharp down to city blocks, based on the Copernicus Data), "Holographic" (dark outline map) and "Street map".
 
 <table>
   <tr>
