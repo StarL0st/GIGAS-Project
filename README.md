@@ -61,7 +61,7 @@ NISAR (NASA-ISRO Synthetic Aperture Radar) is a radar satellite from NASA and IS
 
 The challenge calls for an interactive application that uses NISAR's data to track and visualize one or more types of surface change, with intuitive tools that make the data understandable to a broad or specific audience depending on the needs.
 
-## Who it is for
+## Who is it intended for?
 
 | User | What is available |
 |---|---|
@@ -77,7 +77,7 @@ The challenge calls for an interactive application that uses NISAR's data to tra
 
 ## The web page
 
-The page opens up with a welcome screen: the name over the Earth's horizon, slowly turning. Pressing **Start** sends the letters round the Earth and behind it while the camera pulls back to the whole globe and the panels slide in. The house button brings you back to the starting page with another animation. On the first visit the app asks whether you want the tutorial and which mode to start in. 
+The page opens up with a welcome screen: the name over the Earth's horizon, slowly turning. Pressing **Start** sends the letters round the Earth and behind it while the camera pulls back to the whole globe and the panels slide in. The house button brings you back to the starting page with another animation. On the first visit, the app asks whether you want the tutorial and which mode to start in. 
 
 The screen has three sections:
 
