@@ -135,29 +135,30 @@ On a mobile device the globe sits on top and the panels below it, under two tabs
 </p>
 <p align="center">Street map, zoomed in on Hermosillo, Sonora.</p>
 
-- **City names**: in English, Spanish, German, French, and Japanese. Largest cities first (Natural Earth populated places).
-- **Grouped markers**: events of the same type close together on screen share one square marker with its type icon and a count. Filled markers are radar detections; hollow markers are live events. Clicking a marker lists its events at the top of the right panel, and double-clicking zooms to the group. Markers stay clickable while the globe rotates.
+- **City names**: available in English, Spanish, German, French, and Japanese. Largest cities first (Natural Earth populated places).
+- **Grouped markers**: events of the same type close together on screen, they share one square marker with its type icon as well as a count. Filled markers are radar detections; hollow markers are live events. Clicking a marker lists its events at the top of the right panel, and double-clicking zooms to the group. Markers stay clickable while the globe rotates.
 - **An orbiting satellite**: presented as a decoration. Its orbit has NISAR's tilt, but its position, height and size are not real. The tutorial specifies this.
 - **Side panels**: with the ability to be pushed off screen and pulled back with the arrows on the globe's edges depending on preferences and readability.
 
 ### Scope reduction
 
-- **Country search.** Pick one or more countries: they are outlined on the globe, and the area list, the detected changes and the live events maintain only what lies inside them.
+- **Country search.** Pick one or more countries: they are outlined on the globe, the area lists detected changes, and the live events maintain only what lies inside them.
 
 <p align="center">
   <img src="images/country-search-v2.png" alt="The country search box, highlighted at the top of the left panel, above the filters" width="800">
 </p>
 <p align="center">The country search, at the top of the left panel.</p>
 
-- **Filters by type**, in three groups (natural disasters, disasters caused by humans, land use), each type with its own icon. Everything on the globe follows the filters.
+- **Filters by type**: in three groups (natural disasters, disasters caused by humans, land use), each type with its own icon. Everything on the globe follows the filters.
 
 <p align="center">
   <img src="images/filters.png" alt="The filters panel, highlighted: Natural disasters, Disasters caused by humans and Land use, each type with its icon and a 'Select all' box" width="800">
 </p>
-<p align="center">Filters by type, in three groups.</p>
+<p align="center">Filters by type in three groups.</p>
 
-- **My places.** Places you open are kept in your browser (only their coordinates) and listed for next time. New visitors see a few suggested places.
-- **"Go to coordinates"** (Technical mode): fly to a latitude and longitude. **"Process this place"** asks the back end to analyze it. If the place is already a known area, that area opens instead.
+- **My places**: places you open are kept in your browser (only their coordinates) and listed for next time. New visitors see a few suggested places.
+- **"Go to coordinates"** (Technical mode): fly to a latitude and longitude.
+- **"Process this place"**: asks the back end to analyze it. If the place is already a known area, that area opens instead.
 
 <p align="center">
   <img src="images/coordinates.png" alt="The Go to coordinates box, highlighted: latitude and longitude fields, a Go button and a Process this place button, with the globe turned to Asia and Africa" width="800">
@@ -166,22 +167,22 @@ On a mobile device the globe sits on top and the panels below it, under two tabs
 
 ### Radar areas
 
-Areas use lazy loading. An AOI’s data is only fetched when the user opens it or zooms past a set level over its footprint. Selecting a map marker or a list row opens the AOI in its own tab, which has these parts:
+Areas use lazy loading. An AOI’s data is only fetched when the user opens it or zooms past a set level over its footprint. Selecting a map marker or a list row opens the AOI in its own tab, which contain the following:
 
-- **Raster layers**: Geocoded SAR images placed on the globe, with a time slider for choosing the acquisition date and a layer opacity control.
-  In Technical mode the user picks the layer: radar backscatter per polarization channel from the L2 GCOV product, change-detection maps, ground displacement from interferometry (GUNW), or soil moisture.
-  In Simple mode the layer is picked automatically, based on which one shows the most change in that area.
-- **Legend and description**: Every layer has a color scale with units and value range, plus a short plain-language note on what the layer measures.
+- **Raster layers**: geocoded SAR images placed on the globe, with a time slider for choosing the acquisition date and a layer opacity control.
+  - In "Technical mode" the user picks the layer: radar backscatter per polarization channel from the L2 GCOV product, change-detection maps, ground displacement from interferometry (GUNW), or soil moisture.
+  - In "Simple mode" the layer is picked automatically, based on which one shows the most change in that area.
+- **Legend and description**: every layer has a color scale with units and value range, plus a short plain-language note on what the layer measures.
 - **Automated change summary (“What the radar found here”)**: a short written summary of the changes detected in every AOI, including areas that visitors look up themselves.
-- **Data lineage (“Where this comes from”)**: Product type and level, polarization, data maturity level, source granule IDs, the processing steps and their parameters, software versions, and credit lines.
-- **Source labels**: Every dataset has a tag showing where it came from (◆ NISAR SAR, ● other satellite, ▲ near-real-time report, ■ published record), along with the product ID and the date it was acquired.
-- **Time-series plots**: One line chart per measured quantity, with a value readout under the cursor and a table view of the same data.
-- **Acquisition timeline and top changes**: A timeline of every satellite pass over the AOI and the five largest detected changes. In Technical mode each change shows a confidence score. The rest are listed in the report.
-- **Before/after comparator**: A slider line that you drag across two images from different dates.
+- **Data lineage (“Where this comes from”)**: product type and level, polarization, data maturity level, source granule IDs, the processing steps and their parameters, software versions, and credit lines.
+- **Source labels**: every dataset has a tag showing where it came from (◆ NISAR SAR, ● other satellite, ▲ near-real-time report, ■ published record), along with the product ID and the date it was acquired.
+- **Time-series plots**: one line chart per measured quantity, with a value readout under the cursor and a table view of the same data.
+- **Acquisition timeline and top changes**: a timeline of every satellite pass over the AOI and the five largest detected changes. In Technical mode each change shows a confidence score. The rest are listed in the report.
+- **Before/after comparator**: a slider line that you drag across two images from different dates.
   - Works with NISAR SAR images and with optical satellite images from NASA GIBS (Landsat and Sentinel-2 at 30 m, or daily VIIRS).
-  - The two images can be 1 month to 10 years apart. Ctrl/⌘ + scroll zooms in and out.
+  - The two images range from one month up to 10 years apart. Ctrl/⌘ + scroll zooms in and out.
   - In Technical mode a threshold slider highlights only pixels whose change is above a chosen percentage. The same threshold is also shown in decibels (dB = 10·log₁₀(1 + p), so a 100 % increase is about +3 dB).
-- **PDF report per area**: "Make report" creates the PDF, which can be read in the page or downloaded. It has:
+- **PDF report per area**: "Make report" creates the PDF, which can be read in the page or downloaded. It includes:
   - A cover page with the key numbers.
   - Numbered sections with images, charts and tables, each labelled with its source and acquisition date.
   - A numbered list of references, mostly NASA.
@@ -190,12 +191,12 @@ Areas use lazy loading. An AOI’s data is only fetched when the user opens it o
 <p align="center">
   <img src="images/area-card.png" alt="Villahermosa open in Technical mode: the radar picture over the city with its date slider, and the area card with Make report, the types watched for, the source badges, a description of the place and what the radar found" width="800">
 </p>
-<p align="center">The area card: Make report, the types of change watched for, where each part comes from, and what the radar found.</p>
+<p align="center">The area card: "Make report", the types of change watched for, where each part comes from, and what the radar found.</p>
 
 <p align="center">
   <img src="images/area-found.png" alt="The list of changes found in Villahermosa, highlighted: agriculture, deforestation, urban change, floods, other change and wildfires, each with its level, area in square kilometres, number of places and dates" width="800">
 </p>
-<p align="center">"What the radar found here": each type of change with its level, its area, how many places and when.</p>
+<p align="center">"What the radar found here": each type of change with its level, area, how many places, and when.</p>
 
 <p align="center">
   <img src="images/compare-radar.png" alt="Compare two dates: two NISAR radar pictures of Villahermosa (HV backscatter, June and October 2026) split by a line you can drag" width="800">
@@ -240,13 +241,13 @@ Simple mode has its own side panel, written for beginners: a welcome guide, then
 
 <table>
   <tr>
-    <td align="center" width="33%"><img src="images/guide-1.png" alt="Your guide for Villahermosa: question 1, what is this place about, lists cutting down forests, farming, wildfires, floods and growing cities; question 2 says NISAR looked at the place on 10 days"><br>1-2: The place and what the radar saw</td>
+    <td align="center" width="33%"><img src="images/guide-1.png" alt="Your guide for Villahermosa: question 1, what is this place about, lists cutting down forests, farming, wildfires, floods and growing cities; question 2 says NISAR looked at the place on 10 days"><br>1-2: The place and what the radar observed</td>
     <td align="center" width="33%"><img src="images/guide-2.png" alt="Question 3, look for yourself: choose the kind of picture (close-up photo chosen) and how far back (1 year chosen), then a before and after photo with changes in blue and orange"><br>3-4: Look for yourself</td>
     <td align="center" width="33%"><img src="images/guide-3.png" alt="Question 5, where does this come from, with NISAR radar, other satellite and published record explained, and question 6, words to know: radar, satellite, echo; then Make report and I want all the details"><br>5-6: Sources and words to know</td>
   </tr>
 </table>
 
-A **"Why the radar sees changes"** section outlines with pictures, in every area card, and can expand to a full page with the "How radar sees"
+A **"Why the radar sees changes"** section outlines with pictures, in every area card, with the ability to expand to a full page with the "How radar sees"
 button tab.
 <p align="center">
   <img src="images/how-radar-sees-button.png" alt="The How radar sees button, highlighted in the header between Tutorial and the mode switch" width="800">
@@ -281,7 +282,7 @@ button tab.
 
 - **Five languages**: English, Spanish, German, Japanese, and French.
 - **Guided tutorial** on the first visit and given from the Tutorial button.
-- **Works on mobile devices**, in portrait and landscape.
+- **Works on mobile devices** in both portrait and landscape.
 - **Accessibility**: full keyboard use, screen-reader labels, color never used alone (types are always named and have icons), a colorblind-safe palette for the filter groups and charts, and reduced motion respected throughout (animations become fades or stop).
 - **Honesty notices**: a banner whenever example places or synthetic test data are on screen.
 
@@ -303,19 +304,17 @@ Only official sources are used, and every event names its source.
 | U.S. Geological Survey, Volcano Hazards Program | Volcanoes at a raised alert level | United States |
 | NOAA National Hurricane Center, NASA FIRMS fire detections (VIIRS on NOAA-20) | Tropical cyclones, fire hot spots | Only through the back end (see [Known limits](#known-limits)) |
 
-**When an event leaves the globe:** a moment in time (an earthquake, a fire detection) after 24 hours; an event its source still lists as going on (a flood, a drought, a weather alert, a restless volcano) when the source stops listing it.
+**When an event leaves the globe:** a moment in time (an earthquake, a fire detection) after 24 hours; an event and its source still lists as going on (a flood, a drought, a weather alert, a restless volcano) when the source stops listing it.
 
 **No live source exists** for the slow changes (subsidence, groundwater extraction, logging, coastal land loss, permafrost, ice sheets). Those are exactly what the NISAR radar areas are for.
 
 ## The NISAR pipeline (back end)
 
-<!-- Written from backend/README.md and docs/ on main. Back-end lane: please check this section. -->
-
-The back end (`backend/`, Python) turns NISAR granules into the map layers and change events the globe shows. The complete technical method is in [Methodology for radar data processing](#methodology-for-radar-data-processing). It uses three NISAR products, all NASA data:
+The back end (`backend/`, Python) turns NISAR granules into the map layers and change events the globe shows. The complete technical method is located in [Methodology for radar data processing](#methodology-for-radar-data-processing). It uses three NISAR products, all NASA data:
 
 | Product | What it measures | Used for |
 |---|---|---|
-| **GCOV** (L2, 10 m, HH and HV backscatter) | How bright the surface is to the radar | Surface type; floods, forest or vegetation loss, new structures, crops |
+| **GCOV** (L2, 10 m, HH and HV backscatter) | Surface brightness relative to the radar | Surface type; floods, forest or vegetation loss, new structures, crops |
 | **GUNW** (L2, 80 m, unwrapped interferograms) | Ground motion between two passes (cm) | Subsidence |
 | **SME2** (L3, about 200 m) | Soil moisture | Soil drying (a drought signal) |
 
@@ -329,7 +328,7 @@ Steps, per site:
 
 **Sites (Mexico):**
 
-| Site | Watched for |
+| Site | Monitored for |
 |---|---|
 | Hopelchén, Campeche (Yucatán Peninsula) | Deforestation, farmland |
 | Villahermosa, Tabasco | Floods |
@@ -350,7 +349,7 @@ The server re-checks every site for new NISAR passes every 12 hours, one site at
 
 ## Methodology for radar data processing
 
-This section explains, step by step, how the back end turns NISAR radar data into map layers, time series and change events. It describes `sars-pipeline` (contract 0.7.0) as on `main` at commit `5a29f65`. Every value is a default in the code, and a site can override most of them in `backend/sites.json`. The code is in `backend/src/sars_pipeline/`; a code map is at the end of this section.
+This section explains, step by step, how the back end turns NISAR radar data into map layers, time series, and change events. It describes `sars-pipeline` (contract 0.7.0) as on `main` at commit `5a29f65`. Every value is a default in the code, and a site can override most of them in `backend/sites.json`. The code is in `backend/src/sars_pipeline/`; a code map is at the end of this section.
 
 **The pipeline in one line:** choose the area → search ASF → select granules → stream and cache the area's window → reduce speckle → measure → detect change → interpret → filter → publish.
 
