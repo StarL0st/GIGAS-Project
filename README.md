@@ -125,7 +125,7 @@ On a mobile device the globe sits on top and the panels below it, under two tabs
 <table>
   <tr>
     <td align="center" width="33%"><img src="images/look-high-quality.png" alt="The globe with the High Quality look: a cloud-free satellite picture of the Americas"><br>High Quality</td>
-    <td align="center" width="33%"><img src="images/look-hologram.png" alt="The globe with the Hologram look: dark blue land and sea with light outlines"><br>Hologram</td>
+    <td align="center" width="33%"><img src="images/look-hologram.png" alt="The globe with the Hologram look: dark blue land and sea with light outlines"><br>Holographic</td>
     <td align="center" width="33%"><img src="images/look-street.png" alt="The globe with the Street map look: a light map with country names"><br>Street map</td>
   </tr>
 </table>
@@ -135,10 +135,10 @@ On a mobile device the globe sits on top and the panels below it, under two tabs
 </p>
 <p align="center">Street map, zoomed in on Hermosillo, Sonora.</p>
 
-- **City names** in English, Spanish, German, French, and Japanese, largest cities first (Natural Earth populated places).
-- **Grouped markers** Events of the same type close together on screen share one square marker with its type icon and a count. Filled markers are radar detections; hollow markers are live events. Clicking a marker lists its events at the top of the right panel, and double-clicking zooms to the group. Markers stay clickable while the globe rotates.
-- **An orbiting satellite** as a decoration. Its orbit has NISAR's tilt, but its position, height and size are not real. The tutorial specifies this.
-- **Side panels** can be pushed off screen and pulled back with the arrows on the globe's edges depending on preferences and readability.
+- **City names**: in English, Spanish, German, French, and Japanese. Largest cities first (Natural Earth populated places).
+- **Grouped markers**: events of the same type close together on screen share one square marker with its type icon and a count. Filled markers are radar detections; hollow markers are live events. Clicking a marker lists its events at the top of the right panel, and double-clicking zooms to the group. Markers stay clickable while the globe rotates.
+- **An orbiting satellite**: presented as a decoration. Its orbit has NISAR's tilt, but its position, height and size are not real. The tutorial specifies this.
+- **Side panels**: with the ability to be pushed off screen and pulled back with the arrows on the globe's edges depending on preferences and readability.
 
 ### Scope reduction
 
@@ -872,7 +872,8 @@ The project's rule is that nothing synthetic is ever shown as real.
 
 ## Use of AI
 
-Two AI tools were used. **Claude** (Anthropic) wrote code under the team's direction and review, and wrote the German, Japanese and French interface texts. **Meshy** generated the satellite 3D model from NASA/JPL-Caltech's illustration of NISAR. No AI-generated images, audio or video are shown as data, and no data is invented: see [What is real and what is not](#data-integrity-what-is-real-and-what-is-not).
+-Two AI tools were used: **Claude** (Anthropic) wrote code under the team's direction and review, and wrote the German, Japanese and French interface texts. **Meshy** generated the satellite 3D model from NASA/JPL-Caltech's illustration of NISAR.
+-No AI-generated images, audio or video are shown as data, and no data is invented: see [What is real and what is not](#data-integrity-what-is-real-and-what-is-not).
 
 ## License
 
@@ -890,7 +891,5 @@ G.I.G.A.S is open source under the [GNU Affero General Public License v3.0](LICE
 
 
 
-
-<!-- TODO (team): GitHub profile links, and a team photo if you want one. -->
 
 <img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/5a40a220-48a4-4d7d-8340-e935ea13dc38" />
