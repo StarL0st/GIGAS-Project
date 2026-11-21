@@ -872,8 +872,8 @@ The project's rule is that nothing synthetic is ever shown as real.
 
 ## Use of AI
 
--Two AI tools were used: **Claude** (Anthropic) wrote code under the team's direction and review, and wrote the German, Japanese and French interface texts. **Meshy** generated the satellite 3D model from NASA/JPL-Caltech's illustration of NISAR.
--No AI-generated images, audio or video are shown as data, and no data is invented: see [What is real and what is not](#data-integrity-what-is-real-and-what-is-not).
+- Two AI tools were used: **Claude** (Anthropic) wrote code under the team's direction and review, and wrote the German, Japanese and French interface texts. **Meshy** generated the satellite 3D model from NASA/JPL-Caltech's illustration of NISAR.
+- No AI-generated images, audio or video are shown as data, and no data is invented: see [What is real and what is not](#data-integrity-what-is-real-and-what-is-not).
 
 ## License
 
